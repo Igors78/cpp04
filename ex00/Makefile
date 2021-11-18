@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ioleinik <ioleinik@students.42wolfsburg.de +#+  +:+       +#+         #
+#    By: ioleinik <ioleinik@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/11 22:31:17 by ioleinik          #+#    #+#              #
-#    Updated: 2021/11/13 09:16:05 by ioleinik         ###   ########.fr        #
+#    Updated: 2021/11/18 15:43:46 by ioleinik         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,9 +17,9 @@ RM			= rm -f
 
 NAME		= claptrap
 
-SRC			= main.cpp ClapTrap.cpp
+SRC			= main.cpp Animal.cpp
 
-INC			= ClapTrap.hpp
+INC			= Animal.hpp
 
 OBJ			= ${SRC:.cpp=.o}
 
@@ -27,7 +27,7 @@ all:		$(NAME)
 
 $(NAME):	$(OBJ)
 			$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJ)
-			@echo "[./claptrap] to run"
+			@echo "[./] to run"
 
 clean:
 			$(RM) $(OBJ)
